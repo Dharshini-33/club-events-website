@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CAMPUSFLOW</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #eef0f7;
+    color: #1b1d4b;
+    margin: 0;
+    padding: 20px;
+}
+h1 {
+    font-size: 36px;
+    margin: 0 0 8px;
+    }
+</style>
+
+<body>
+  <header class="hero">
+    <h1 id="top">What's happening on campus</h1>
+    <p>Find events from every club, and register in under a minute.</p>
+    <a class="button" href="#register">Register for an event</a>
+  </header>
+        <h3>Hack Night</h3>
+        <small>Code Collective</small>
+        <p>Build a working prototype in 6 hours.</p>
+        <p>7 Nov, 6:00 PM at CS Lab 2</p>
+        <a href="#event-1">View details</a>
+    </div>
+    <div class="card">
+      <h3>Open Mic Evening</h3>
+      <small>Melody Society</small>
+      <p>Sing, play, or just come and listen.</p>
+      <p>10 Nov, 7:30 PM at Amphitheatre</p>
+      <a href="#event-2">View details</a>
+    </div>
+
+    <div class="card">
+      <h3>Football Cup</h3>
+      <small>Sports Council</small>
+      <p>Knockout tournament across all departments.</p>
+      <p>14 Nov, 8:00 AM at Main Ground</p>
+      <a href="#event-3">View details</a>
+    </div>
+</body>
+<body>
+  <h1>Campus Clubs</h1>
+  <p>Find events from every club on campus.</p>
+
+  <div class="grid">
+    (card 1)
+    (card 2)
+    (card 3)
+  </div>
+  <section class="details" id="event-1">
+    <h2>Hack Night</h2>
+    <p><strong>Club:</strong> Code Collective</p>
+    <p><strong>Date:</strong> Saturday, 7 November, 6:00 PM</p>
+    <p><strong>Venue:</strong> CS Lab 2</p>
+    <p>Team up, pick a prompt, and build a working prototype before midnight. Mentors will be around to help. Pizza is provided.</p>
+    <a href="#top">Back to all events</a>
+  </section>
+
+  <section class="details" id="event-2">
+    <h2>Open Mic Evening</h2>
+    <p><strong>Club:</strong> Melody Society</p>
+    <p><strong>Date:</strong> Tuesday, 10 November, 7:30 PM</p>
+    <p><strong>Venue:</strong> Amphitheatre</p>
+    <p>Sign up for a 5-minute slot or just come to listen. Instruments are provided.</p>
+    <a href="#top">Back to all events</a>
+  </section>
+
+  <section class="details" id="event-3">
+    <h2>Football Cup</h2>
+    <p><strong>Club:</strong> Sports Council</p>
+    <p><strong>Date:</strong> Saturday, 14 November, 8:00 AM</p>
+    <p><strong>Venue:</strong> Main Ground</p>
+    <p>Knockout tournament across all departments. Teams of 7, one captain registers per team.</p>
+    <a href="#top">Back to all events</a>
+  </section>
+  <section class="panel" id="register">
+    <h2>Register</h2>
+    <form action="https://formspree.io/f/abcd1234" method="post">
+
+      <label for="event">Event</label>
+      <select id="event" name="event" required>
+        <option value="">Choose an event</option>
+        <option>Hack Night</option>
+        <option>Open Mic Evening</option>
+        <option>Football Cup</option>
+      </select>
+
+      <label for="name">Full name</label>
+      <input id="name" name="name" type="text" minlength="2" required>
+
+      <label for="email">College email</label>
+      <input id="email" name="email" type="email" required>
+
+      <label for="year">Year of study</label>
+      <select id="year" name="year" required>
+        <option value="">Select year</option>
+        <option>1st year</option>
+        <option>2nd year</option>
+        <option>3rd year</option>
+        <option>4th year</option>
+      </select>
+
+      <label for="note">Anything we should know? (optional)</label>
+      <textarea id="note" name="note" rows="3"></textarea>
+
+      <button type="submit">Register for this event</button>
+    </form>
+  </section>
+
+  <section class="thanks" id="thanks">
+    <h2>You're registered!</h2>
+    <p>We'll email your event details soon.</p>
+    <a href="#top">Back to all events</a>
+  </section>
+</body>
+
+</html>
