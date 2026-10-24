@@ -2,7 +2,7 @@
 
 A simple website to browse college club events and register for them, built with only HTML and CSS.
 
-**Live demo:** https://your-username.github.io/club-events-website/
+**Live demo:** https://Dharshini-33.github.io/club-events-website/
 
 ## Features
 
